@@ -3,41 +3,54 @@ body {
 }
 
 header {
-  background-color: rgba(244, 244, 244, 0.879);
+  background-color: #f5f5f7;
   height: 44px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1024px;
+  padding: 0 22px;
+}
+
+.header-container {
+  background-color: #f5f5f7;
 }
 
 img {
   width: 16px;
-  padding-left: 9px;
-  padding-right: 9px;
+  padding: 14px 0;
 }
 
 button {
   background-color: transparent;
   font-size: 11px;
-  padding: 0 9px;
   border: 0;
-  display: none;
+  padding: 0 9px;
+  height: 44px;
+  display: inline-block;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
-  padding: 12px 22px 0 22px;
-  margin: 0 82.5px;
 }
 
-.right {
-  display: flex;
+.equal_logo {
+  display: none;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 833px) {
   button {
+    display: none;
+  }
+  .equal_logo {
     display: inline-block;
   }
-
-  .equal_logo {
-    display: none;
+  .apple_logo {
+    margin-right: auto;
+  }
+  .magnifier_logo,
+  .bag_logo {
+    margin-right: 10px;
   }
 }
