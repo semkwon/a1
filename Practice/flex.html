@@ -1,60 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Transition Test</title>
     <style>
-      body {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas:
-          "header header"
-          "aside main"
-          "footer footer";
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: red;
       }
-
-      header {
-        grid-area: header;
-        background-color: pink;
-      }
-      main {
-        z-index: 1;
-        grid-area: main;
-        background-color: royalblue;
-      }
-      aside {
-        grid-area: aside;
-        background-color: lightgreen;
-        transition: 0.3s;
-        transform-origin: 0 0;
-      }
-
-      /* aside 에 마우스를 호버하면 10% 크기를 키웁니다. */
-      aside:hover {
-        transform: scale(1.4);
-      }
-
-      footer {
-        /* aside 의 크기가 커져도 footer를 가리지 않게 합니다. */
-        z-index: 1;
-        grid-area: footer;
-        background-color: aquamarine;
+      div:hover {
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+        transition: all 2s;
       }
     </style>
   </head>
   <body>
-    <body>
-      <header>header</header>
-      <main>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error repellat
-        earum iure id natus, consectetur, aut a adipisci, suscipit dolore in
-        quam commodi recusandae magni excepturi sapiente quasi optio
-        accusantium?
-      </main>
-      <aside>aside</aside>
-      <footer>footer</footer>
-    </body>
+    <div>hello world</div>
   </body>
 </html>
