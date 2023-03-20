@@ -1,7 +1,6 @@
 div {
-  width: 300px;
-  height: 400px;
-  border: 1px solid blue;
+  display: inline-block;
+  border-right: 2px solid blue;
 }
 
 /*# sourceMappingURL=sass.css.map */

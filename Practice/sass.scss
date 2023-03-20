@@ -1,12 +1,7 @@
-@mixin box($w, $h) {
-  width: $w;
-  height: $h;
+@mixin bx($position, $wid, $color) {
+  border-#{$position}: $wid solid $color;
 }
-@mixin border($color) {
-  border: 1px solid $color;
-}
-
 div {
-  @include box(300px, 400px);
-  @include border(blue);
+  display: inline-block;
+  @include bx(right, 2px, blue);
 }
