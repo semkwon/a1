@@ -11,5 +11,9 @@
       "trait_type": "VEGETABLE",
       "value": "carrot"
     }
+    {
+      "trait_type": "VEGECOLOR",
+      "value": "carrot"
+    }
   ]
 }
