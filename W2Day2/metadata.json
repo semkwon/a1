@@ -15,5 +15,9 @@
       "trait_type": "VEGECOLOR",
       "value": "carrot"
     }
+    {
+      "trait_type": "EYE",
+      "value": "sunglasses"
+    }
   ]
 }
