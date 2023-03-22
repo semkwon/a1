@@ -10,13 +10,13 @@
     {
       "trait_type": "VEGETABLE",
       "value": "carrot"
-    }
+    },
     {
       "trait_type": "VEGECOLOR",
       "value": "carrot"
-    }
+    },
     {
-      "trait_type": "EYE",
+      "trait_type": "GLASSES",
       "value": "sunglasses"
     }
   ]
